@@ -1,7 +1,5 @@
-import type { NextConfig } from 'next';
+const { withNextDevtools } = require('@next-devtools/core/plugin')
 
-const nextConfig: NextConfig = {
-  /* config options here */
-};
-
-export default nextConfig;
+module.exports = withNextDevtools({
+  // Other Next.js configuration ...
+})
